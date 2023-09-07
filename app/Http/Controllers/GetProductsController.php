@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Actions\GetProductsAction;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use App\DB\Query;
 class GetProductsController extends Controller
 {
@@ -12,8 +10,7 @@ class GetProductsController extends Controller
      * Dummy data for the purpose of the test, normally this would be set by a store builder class
      */
     public int $storeId = 3;
-    private string $imagesDomain;
-
+    
     private Query $query;
     public function __construct()
     {
